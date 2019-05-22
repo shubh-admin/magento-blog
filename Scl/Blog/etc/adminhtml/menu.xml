@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Shubh Computing LLP
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Shubhcomputing.com license that is
+ * available through the world-wide-web at this URL:
+ * https://shubhcomputing.com/license.html *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Shubh Computing LLP
+ * @package     Scl_Blog
+ * @copyright   Copyright (c) Shubhcomputing (https://shubhcomputing.com/)
+ * @license     https://shubhcomputing.com/license.html
+ */ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Scl_Blog::blog_content" title="Blog" module="Scl_Blog" sortOrder="60" parent="Magento_Backend::content" resource="Scl_Blog::blog_content" />
+        <add id="Scl_Blog::post" title="Posts" module="Scl_Blog" sortOrder="0" parent="Scl_Blog::blog_content" action="blog/post" resource="Scl_Blog::post"/>
+    </menu>
+</config>
